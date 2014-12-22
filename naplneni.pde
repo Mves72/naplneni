@@ -31,12 +31,15 @@ void mouseWheel(MouseEvent event) {
 }
 
 void mouseClicked() {
-  if (mouseButton=="RIGHT"){konec();}
+  if (mouseButton==RIGHT){konec();}
+ else{
+   if (mouseButton==LEFT){
  TableRow zaznam = tabulka.addRow();
   zaznam.setInt("id", tabulka.lastRowIndex());
   zaznam.setInt("x", mouseX);
   zaznam.setInt("y", mouseY);
-  zaznam.setInt("r", prumer);
+  zaznam.setInt("r", prumer);}
+ }
 
 }
 
