@@ -1,6 +1,6 @@
 int prumer = 30;
 int prumermin = 20;
-int prumermax = 50;
+int prumermax = 60;
 Table tabulka;
 void setup() {
   size(400, 300);
